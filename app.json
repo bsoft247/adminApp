@@ -1,29 +1,45 @@
 {
   "expo": {
-    "name": "adminApp",
+    "name": "PayAfrika Admin",
     "slug": "adminApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
+      "package": "com.payafrika.admin", 
+      "edgeToEdgeEnabled": true,
+
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+
+    "plugins": [
+      "expo-secure-store"
+    ],
+
+    "extra": {
+      "eas": {
+        "projectId": "c7f77b3c-1c53-4c97-8b28-e6175ea4c14d"
+      }
     }
   }
 }
