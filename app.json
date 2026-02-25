@@ -29,8 +29,7 @@
     },
     "plugins": [
       "expo-secure-store",
-      "expo-notifications",
-      "expo-device"
+      "expo-notifications"
     ],
     "extra": {
       "eas": {
