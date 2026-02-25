@@ -6,36 +6,32 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.payafrika.admin"
     },
-
     "android": {
-      "package": "com.payafrika.admin", 
+      "package": "com.payafrika.admin",
       "edgeToEdgeEnabled": true,
-
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
-
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "plugins": [
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-notifications",
+      "expo-device"
     ],
-
     "extra": {
       "eas": {
         "projectId": "c7f77b3c-1c53-4c97-8b28-e6175ea4c14d"
